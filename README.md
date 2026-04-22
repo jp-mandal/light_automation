@@ -29,18 +29,18 @@ OLED SCL	I2C1 SCL	I2C Clock
 **System Functionality**
 
 1. ADC-Based Light Detection
-•	The LDR outputs an analog voltage proportional to light intensity. 
-•	STM32 ADC (12-bit) converts it into a value between 0–4095.
+  •	The LDR outputs an analog voltage proportional to light intensity. 
+  •	STM32 ADC (12-bit) converts it into a value between 0–4095.
 2. Operating Modes
-  Manual Mode
-  •	Triggered when switch is pressed (LOW) 
-  •	LED is forced OFF, regardless of light intensity
-   Automatic Mode
-  •	Triggered when switch is released (HIGH) 
-  •	System decides based on light level:
-      Condition	Mode	LED
-      LDR < Threshold	Night	ON
-      LDR ≥ Threshold	Day	OFF
+    Manual Mode
+      •	Triggered when switch is pressed (LOW) 
+      •	LED is forced OFF, regardless of light intensity
+    Automatic Mode
+      •	Triggered when switch is released (HIGH) 
+      •	System decides based on light level:
+        Condition	Mode	LED
+        LDR < Threshold	Night	ON
+        LDR ≥ Threshold	Day	OFF
 
 3. OLED Display Output
   The OLED shows:
