@@ -28,7 +28,8 @@ OLED SCL	I2C1 SCL	I2C Clock
 
 **System Functionality**
 
-1. ADC-Based Light Detection
+1. ADC-Based Light 
+
   •	The LDR outputs an analog voltage proportional to light intensity. 
   •	STM32 ADC (12-bit) converts it into a value between 0–4095.
 2. Operating Modes
